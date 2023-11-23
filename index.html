@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Set the character set and viewport for responsive design -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Link to the external stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Title of the webpage -->
+  <title>Smoothie Machine</title>
+</head>
+
+<body class="gradient-background">
+  <!-- Container for the entire content of the webpage -->
+  <div class="container">
+  
+    <!-- Header section-->
+    <header class="banner"></header>
+  
+    <!-- Main heading of the webpage -->
+    <h1>Smoothie Order Form</h1>
+    
+    <!-- Form for collecting smoothie order details -->
+    <form id="smoothieForm">
+      <!-- Personal details -->
+      <div class="details">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <br>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      
+      <hr />
+      
+      <!-- Dropdowns for selecting flavor, milk type, and sweetener -->
+      <label for="flavor">Select Flavor:</label>
+      <select id="fruit" name="fruit">
+        <option value="banana">Banana</option>
+        <option value="strawberry">Strawberry</option>
+        <option value="blueberry">Mango</option>
+      </select>
+
+      <label for="milkType">Select Milk Type:</label>
+      <select id="milkType" name="milkType">
+        <option value="regular">Regular</option>
+        <option value="almond">Almond</option>
+        <option value="soy">Soy</option>
+      </select>
+
+      <label for="sweetener">Select Sweetener:</label>
+      <select id="sweetener" name="sweetener">
+        <option value="honey">Honey</option>
+        <option value="agave">Agave</option>
+        <option value="sugar">Sugar</option>
+      </select>
+      
+      <hr />
+      
+      <!-- Sliders for selecting ice and sugar levels -->
+      <label for="ice">Select Ice Level:</label>
+      <input type="range" id="ice" name="ice" min="0" max="100" step="10" value="50">
+      <p>Ice Level: <span id="iceValue">50</span>%</p>
+
+      <br>
+      
+      <label for="sugar">Select Sugar Level:</label>
+      <input type="range" id="sugar" name="sugar" min="0" max="100" step="10" value="50">
+      <p>Sugar Level: <span id="sugarValue">50</span>%</p>
+      
+      <hr />
+      
+      <!-- Selecting smoothie size -->
+      <div class="smoothieSize">
+        <label for="size">Select Size:</label>
+        <select id="size" name="size">
+          <option value="large">Large</option>
+          <option value="medium">Medium</option>
+          <option value="small">Small</option>
+        </select>
+        <br>
+      </div>
+      
+      <!-- Submit button -->
+      <div class="submitBut">
+        <button type="button" onclick="orderSmoothie()">Submit the Order</button>
+      </div>
+    </form>
+    
+    <hr />
+    
+    <!-- Display the output (smoothie details) -->
+    <div id="output"></div>
+  </div>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

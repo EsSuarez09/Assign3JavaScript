@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/* Apply styles to the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(images/background.jpg) center/cover; 
+}
+
+/* Style the container */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(300deg, #B6FFFA, #98E4FF, lightyellow);
+    border: 15px black solid;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style the button */
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Change button color on hover */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Style the range input */
+input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Style the paragraph */
+p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Style the pricing display */
+#output {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Style the form */
+form {
+    text-align: center;
+    margin: 0 auto; 
+}
+
+/* Display labels and input fields*/
+label, input {
+    display: inline-block;
+    margin-bottom: 10px; 
+}
+
+/* Style the banner/header */
+.banner {
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    text-align: center;
+    padding: 50px; 
+}
