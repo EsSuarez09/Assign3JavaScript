@@ -27,7 +27,7 @@ function displaySmoothie(smoothie) {
     // Get the output div to display smoothie details
     var outputDiv = document.getElementById('output');
     // Output div with smoothie details and price
-    outputDiv.innerHTML = `<h2>Your Smoothie Ordered:</h2>
+    outputDiv.innerHTML = `<h2>Successfully Ordered:</h2>
                           <p>Name: ${smoothie.name}</p>
                           <p>Email: ${smoothie.email}</p>
                           <p>Phone: ${smoothie.phone}</p>
